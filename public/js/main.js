@@ -1,5 +1,5 @@
 (function() {
-  var app = angular.module('myApp', []);
+  var app = angular.module('myApp', ['ngResource']);
 
   //runs after application is loaded
   app.run(function($rootScope, APP_VERSION) {

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-resource.min.js"></script>
 </head>
 <body ng-app="myApp">
   <div ng-controller="myController">
@@ -28,8 +29,18 @@
         <p>Book Author: {{book.author}}</p>
       </li>
     </ul>
-    <input ng-model="newBookTitle" type="text">
-    <input ng-model="newBookAuthor" type="text">
+    <ul>
+      <li ng-repeat="movie in movies">
+        {{movie.title}}
+      </li>
+    </ul>
+
+    <!-- <input ng-model="newCharacter" type="text" placeholder="Character" >
+    <button ng-click="addCharacter(newCharacter)">
+      Add new character!
+    </button> -->
+    <input ng-model="newBookTitle" type="text" placeholder="Title">
+    <input ng-model="newBookAuthor" type="text" placeholder="Author">
     <button ng-click="addBook(newBookTitle, newBookAuthor)">
       Add new book!
     </button>
@@ -42,6 +53,7 @@
   <script type="text/javascript" src="/js/constants.js"></script>
   <script type="text/javascript" src="/js/factories.js"></script>
   <script type="text/javascript" src="/js/services.js"></script>
+  <script type="text/javascript" src="/js/providers.js"></script>
   <script type="text/javascript" src="/js/myController.controller.js"></script>
 </body>
 </html>
