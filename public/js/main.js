@@ -1,6 +1,8 @@
-var app = angular.module('myApp', []);
+(function() {
+  var app = angular.module('myApp', []);
 
-//dependency injection
-app.controller('myController', ['$scope', function ($scope){
-  $scope.test = "hello";
-}]);
+  //runs after application is loaded
+  app.run(function($rootScope, APP_VERSION) {
+    $rootScope.APP_VERSION = APP_VERSION;
+  });
+}());

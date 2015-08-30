@@ -1,8 +1,8 @@
 //dependency injection
-(function () {
+(function() {
   angular
     .module('myApp')
-    .controller('myController', ['$scope', 'myAppTitle', function ($scope, myAppTitle){
+    .controller('myController', ['$scope', 'myAppTitle', 'APP_VERSION', function ($scope, myAppTitle){
       $scope.myModel = "hello";
       $scope.title = myAppTitle;
     }]);

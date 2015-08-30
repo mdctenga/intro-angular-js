@@ -7,17 +7,23 @@
 </head>
 <body ng-app="myApp">
   <div ng-controller="myController">
+    <h2></h2>
     <h1>{{title}}</h1>
     <h1>{{"hello" + " World"}}</h1>
-  <h2>{{1 - 2}}</h2>
+    <h2>{{1 - 2}}</h2>
+
   <input
     ng-model="test"
     type="text"name="myModel"
     id="">
     <p>{{test}}</p>
   </div>
+  <footer>
+    <small>Version {{APP_VERSION}} </small>
+  </footer>
   <script type="text/javascript" src="/js/main.js"></script>
   <script type="text/javascript" src="/js/values.js"></script>
+  <script type="text/javascript" src="/js/constants.js"></script>
   <script type="text/javascript" src="/js/myController.controller.js"></script>
 </body>
 </html>
