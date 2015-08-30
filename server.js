@@ -5,9 +5,9 @@ app.use(express.static('public'));
 
 app.get('/api', function(req, res){
   var movies = [
-    {title: "Avengers"},
-    {title: "Avengers: Age of Utron"},
-    {title: "Captain Americal: Civil War"}
+    {title: "Star Wars: Return of the Jedi", year: 1983},
+    {title: "Avengers: Age of Utron", year: 2015},
+    {title: "Captain Americal: Civil War", year: 2016}
   ];
   res.send(movies);
 });

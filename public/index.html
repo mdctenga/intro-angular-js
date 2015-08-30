@@ -23,14 +23,16 @@
         {{character}}
       </li>
     </ul>
+    <input ng-model="bookFilter" type="text" name="name" value="">
     <ul>
-      <li ng-repeat="book in books">
+      <li ng-repeat="book in books" | filter: { title: bookFilter }>
         <h4>Book Title: {{book.title}}</h4>
         <p>Book Author: {{book.author}}</p>
       </li>
     </ul>
+
     <ul>
-      <li ng-repeat="movie in movies">
+      <li ng-repeat="movie in movies | filter: {year: 1983}">
         {{movie.title}}
       </li>
     </ul>
