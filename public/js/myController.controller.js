@@ -7,5 +7,6 @@
       $scope.title = myAppTitle;
       $scope.characters = CharacterVersionFactory;
       $scope.books = BookService.getBooks();
+      $scope.addBook = BookService.addBook;
     }]);
 })();

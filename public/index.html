@@ -28,6 +28,11 @@
         <p>Book Author: {{book.author}}</p>
       </li>
     </ul>
+    <input ng-model="newBookTitle" type="text">
+    <input ng-model="newBookAuthor" type="text">
+    <button ng-click="addBook(newBookTitle, newBookAuthor)">
+      Add new book!
+    </button>
   </div>
   <footer>
     <small>Version {{APP_VERSION}} </small>

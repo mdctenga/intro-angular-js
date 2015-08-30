@@ -10,12 +10,15 @@
       this.getBooks = function(){
         return books;
       };
-    });
+      this.getBook = function(){
+        if (index <0 || index >= books.length){
+          return null;
+        }
+        return books[index];
+      };
 
-    this.getBook = function(){
-      if (index <0 || index >= books.length){
-        return null;
-      }
-      return books[index];
-    };
+      this.addBook = function(title, author){
+        books.push( {title: title, author: author});
+      };
+    });
 }());
