@@ -17,8 +17,17 @@
     type="text"name="myModel"
     id="">
     <p>{{test}}</p>
-    <h4>{{characters}}</h4>
-    <h4>{{books}}</h4>
+    <ul>
+      <li ng-repeat="character in characters">
+        {{character}}
+      </li>
+    </ul>
+    <ul>
+      <li ng-repeat="book in books">
+        <h4>Book Title: {{book.title}}</h4>
+        <p>Book Author: {{book.author}}</p>
+      </li>
+    </ul>
   </div>
   <footer>
     <small>Version {{APP_VERSION}} </small>
