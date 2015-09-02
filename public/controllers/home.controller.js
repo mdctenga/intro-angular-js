@@ -2,7 +2,7 @@
 (function() {
   angular
     .module('myApp')
-    .controller('myController', ['$scope', 'myAppTitle', 'CharacterVersionFactory', 'BookService', 'Movies', function ($scope, myAppTitle, CharacterVersionFactory, BookService, Movies){
+    .controller('homeController', ['$scope', 'myAppTitle', 'CharacterVersionFactory', 'BookService', 'Movies', function ($scope, myAppTitle, CharacterVersionFactory, BookService, Movies){
       $scope.myModel = "hello";
       $scope.title = myAppTitle;
       $scope.characters = CharacterVersionFactory;
