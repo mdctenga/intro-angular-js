@@ -9,15 +9,6 @@
   </li>
 </ul>
 
-
-
-<input ng-model="movieFilter" type="text" name="year">
-<ul>
-  <li ng-repeat="movie in movies | beforeYearFilter:movieFilter">
-    {{movie.title}}
-  </li>
-</ul>
-
 <!-- <input ng-model="newCharacter" type="text" placeholder="Character" >
 <button ng-click="addCharacter(newCharacter)">
   Add new character!

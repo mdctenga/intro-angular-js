@@ -1,0 +1,11 @@
+<div ng-controller="movieController">
+  <h1>{{title}}</h1>
+  <h1>{{"hello" + " Movies"}}</h1>
+  <h2>{{1 - 2}}</h2>
+</div>
+<input ng-model="movieFilter" type="text" name="year">
+<ul>
+  <li ng-repeat="movie in movies | beforeYearFilter:movieFilter">
+    {{movie.title}}
+  </li>
+</ul>

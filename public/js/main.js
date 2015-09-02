@@ -7,10 +7,10 @@
       templateUrl: 'views/books.html',
       controller: 'bookController'
     })
-    // .when('/movies', {
-    //   templateUrl: 'views/movies.html',
-    //   controller: 'MoviesController'
-    // })
+    .when('/movies', {
+      templateUrl: 'views/movies.html',
+      controller: 'movieController'
+    })
     // .when('/other', {
     //   templateUrl: 'views/other.html',
     //   controller: 'OtherController'
