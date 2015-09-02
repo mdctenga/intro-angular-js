@@ -11,10 +11,10 @@
       templateUrl: 'views/movies.html',
       controller: 'movieController'
     })
-    // .when('/other', {
-    //   templateUrl: 'views/other.html',
-    //   controller: 'OtherController'
-    // })
+    .when('/others', {
+      templateUrl: 'views/others.html',
+      controller: 'otherController'
+    })
     .when('/', {
       templateUrl: 'views/default.html',
       controller: 'homeController'
